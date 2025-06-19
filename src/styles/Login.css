@@ -1,0 +1,111 @@
+/* Login Page Styling - Doesn't Affect Navbar */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5f0f0, #e6c4cb);
+    padding: 20px;
+  }
+  
+  .login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    color: #7b1026;
+    margin-bottom: 20px;
+  }
+  
+  .login-box .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .login-box .input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .login-box .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .login-box .login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #7b1026;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .login-box .login-btn:hover {
+    background: #5a0d1e;
+  }
+  
+  .login-box .register-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .login-box .register-link a {
+    color: #7b1026;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .login-box .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Create One Button */
+.create-one-btn {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #7b1026;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.create-one-btn:hover {
+    color: #5a0d1e;
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.create-one-btn:active {
+    transform: scale(0.95);
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}

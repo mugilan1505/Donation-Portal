@@ -1,0 +1,409 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #fdf2f4, #fbe7eb);
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.text {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.hero h2 {
+  font-size: 26px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+  margin: 15px 0;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #9b1c35;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #7b1026;
+  transform: scale(1.05);
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  width: 90%;
+  max-width: 420px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Fundraising Fee Banner */
+.fundraising-fee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #f8e1e6, #fff);
+  padding: 14px 20px;
+  margin: 30px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.fundraising-fee .icon {
+  font-size: 22px;
+  color: #9b1c35;
+  margin-right: 12px;
+}
+
+.percentage {
+  font-size: 26px;
+  font-weight: bold;
+  color: #9b1c35;
+  position: absolute;
+  right: 15px;
+}
+
+/* Search Section */
+.search-section {
+  text-align: center;
+  padding: 40px 10%;
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 20px;
+  animation: fadeInUp 1.4s ease-in-out;
+}
+
+.search-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #f3f3f3;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+}
+
+.search-form button {
+  background: #9b1c35;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-form button:hover {
+  background: #7b1026;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Categories Section */
+.categories-section {
+  text-align: center;
+  padding: 50px 10%;
+  background: #fdf2f4;
+  border-radius: 0px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.categories-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background: white;
+  padding: 15px;
+  width: 130px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-icon {
+  font-size: 40px;
+  color: #9b1c35;
+  margin-bottom: 12px;
+  transition: color 0.3s ease-in-out;
+}
+
+.category-card:hover .category-icon {
+  color: #7b1026;
+}
+
+.category-card p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  margin-top: 12px;
+  transition: color 0.3s ease-in-out;
+}
+
+.category-card:hover p {
+  color: #9b1c35;
+}
+
+/* Hover effect background */
+.category-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(155, 28, 53, 0.05);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-card:hover::before {
+  transform: scaleY(1);
+}
+
+
+/* Fundraisers Section */
+.fundraisers-list {
+  text-align: center;
+  padding: 60px 10%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.fundraisers-list h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Fundraisers Container */
+.fundraisers-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Fundraiser Card */
+.fundraiser-card {
+  background: #fff;
+  width: 320px;
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.fundraiser-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  border: 2px solid #9b1c35;
+}
+
+/* Fundraiser Image */
+.fundraiser-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fundraiser-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Fundraiser Content */
+.fundraiser-card h3 {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #333;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.fundraiser-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/* Fundraiser Progress Bar */
+.progress-container {
+  margin-top: 12px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #f6cfcf;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 75%; /* Change dynamically */
+  background: linear-gradient(90deg, #9b1c35, #7b1026);
+  border-radius: 6px;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Fundraiser Amount */
+.fundraiser-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #9b1c35;
+  margin-top: 10px;
+}
+
+/* Donate Button */
+.donate-btn {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  padding: 14px;
+  background: #9b1c35;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.donate-btn:hover {
+  background: #7b1026;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
